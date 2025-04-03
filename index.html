@@ -1,41 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple HTML Page</title>
+    <title>Joseph - Developer portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        * {
             margin: 0;
             padding: 0;
-            background-color: #f0f0f0;
         }
-        .container {
-            width: 80%;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            margin-top: 50px;
+
+        body {
+            background-color: rgb(2, 2, 22);
+            color: antiquewhite;
+            font-family: 'Poppins', sans-serif;
         }
-        h1 {
-            color: #333;
-            text-align: center;
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80 px;
+            background-color: rgb(0, 12, 12);
         }
-        p {
-            color: #666;
-            line-height: 1.6;
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(149, 149, 235);
+            font-size: 1.2rem;
+        }
+
+        .left {
+            font-size: 1.8rem;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            margin: 23px 0;
+        }
+
+        .firstsection div> {
+            width: 30%;
+
+        }
+
+
+
+        .leftsection {
+            font-size: 2rem;
+            margin: auto;
+            width: auto;
+        }
+
+        .rightsection img {
+            margin: unset;
+            padding: 0
+        }
+
+        .black {
+            color: rgb(172, 233, 214);
+        }
+
+        #element {
+            color: rgb(172, 233, 214);
+            ;
+        }
+
+        .secondsection {
+            max-width: 80%;
+            margin: auto;
+            font-size: 1rem;
+            height: 80vh;
+
+        }
+
+        .text-gray {
+            color: gray;
+            font-size: small;
+        }
+
+        .secondsection .box {
+            background: white;
+            width: 80vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+        }
+
+        .secondsection .vertical {
+            height: 93px;
+            width: 2px;
+            background-color: white;
+            margin: 0 100px;
+        }
+
+        .image-top {
+            width: 61px;
+            position: relative;
+            top: -55px;
+            left: -10px;
+        }
+
+        .vertical_title {
+            position: relative;
+            top: 51px;
+            width: 150px;
+
+        }
+
+        .vertical .desc {
+            position: relative;
+            top: 68px;
+            color: gray;
+            width: 172px;
+            font-size: 15px;
+
+        }
+        footer{
+            background-color: blueviolet;
+            height: 100px;
         }
     </style>
 </head>
+
 <body>
-    <div class="container">
-        <h1>Welcome to My Simple HTML Page</h1>
-        <p>This is a basic HTML page example. You can modify and expand it as needed to build your own web pages.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac ullamcorper libero. Curabitur in risus quam. Ut fermentum leo a odio blandit, a fermentum turpis scelerisque. Ut quis tortor ut libero sollicitudin commodo nec et ligula.</p>
-        <p>Integer auctor eros velit, eget euismod eros suscipit a. Proin fermentum fermentum leo. Duis eget est ipsum. Nam dapibus vel leo nec vulputate. Pellentesque sit amet interdum enim.</p>
-    </div>
+    <header>
+        <nav>
+            <div class="left">Joseph Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home </a></li>
+                    <li><a href="/">About </a></li>
+                    <li><a href="/">Services </a></li>
+                    <li><a href="/">Contact </a></li>
+                    <li><a href="/">Projects </a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                Hi my name is <span class="black">Joseph</span>
+                <div>I am a passoniate</div>
+                <div><span id="element"></span></div>
+
+            </div>
+            <div class="rightsection">
+                <img src="cas.png" alt="">
+            </div>
+        </section>
+        <hr>
+        <section class="secondsection">
+            <span class="text-gray">What i haven't done.</span>
+            <h1>Past Experiences</h1>
+
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="webd.png" alt="">
+                    <div class="vertical_title">Worked To build 100 Websites.</div>
+                    <div class="desc">
+                        I have worked with different proffesionals to build more than 100 websites which gave deemded to
+                        be very sucessful
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="webd.png" alt="">
+                    <div class="vertical_title">Worked To build 100 Websites.</div>
+                    <div class="desc">
+                        I have worked with different proffesionals to build more than 100 websites which gave deemded to
+                        be very sucessful
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="webd.png" alt="">
+                    <div class="vertical_title">Worked To build 100 Websites.</div>
+                    <div class="desc">
+                        I have worked with different proffesionals to build more than 100 websites which gave deemded to
+                        be very sucessful
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="webd.png" alt="">
+                    <div class="vertical_title">Worked To build 100 Websites.</div>
+                    <div class="desc">
+                        I have worked with different proffesionals to build more than 100 websites which gave deemded to
+                        be very sucessful
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer-first">Tamang</div>
+            <div class="footer-first"></div>
+            <div class="footer-first"></div>
+            <div class="footer-first"></div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Wed Developer', 'Wed Designer', 'Graphic Designer', 'Gamer'],
+            typeSpeed: 50,
+        });
+    </script>
+
 </body>
+
 </html>
